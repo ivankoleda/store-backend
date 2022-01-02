@@ -4,12 +4,12 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm i'
-                sh 'npm build'
+                sh 'npm run build'
             }
         }
         stage('test') {
             steps {
-                sh 'npm test'
+                sh 'npm run test'
             }
         }
     }
