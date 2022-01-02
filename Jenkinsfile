@@ -7,5 +7,10 @@ pipeline {
                 sh 'npm build'
             }
         }
+        stage('test') {
+            steps {
+                sh 'npm test'
+            }
+        }
     }
 }
