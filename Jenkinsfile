@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('install deps') {
       steps {
-        sh 'npm i'
+        sh 'npm ci'
       }
     }
 
