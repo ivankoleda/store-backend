@@ -19,4 +19,10 @@ describe('AppController', () => {
       expect(appController.getHello()).toBe('Hello World!');
     });
   });
+
+  describe('root', () => {
+    it('should return empty obj', () => {
+      expect(appController.returnEmptyObj()).toEqual({});
+    });
+  });
 });
